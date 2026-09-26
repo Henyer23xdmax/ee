@@ -1,72 +1,67 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "UCSS Market",
+  "theme": "almond",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#1E3A5F",
+    "light": "#9CC0E7",
+    "dark": "#16293F"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "tab": "Guía de Usuario",
+        "groups": [
+          {
+            "group": "Primeros Pasos",
+            "pages": [
+              "introduction",
+              "getting-started/account-setup",
+              "getting-started/navigating-the-app"
+            ]
+          },
+          {
+            "group": "Compradores",
+            "pages": [
+              "buyers/browsing-catalog",
+              "buyers/product-details",
+              "buyers/checkout-and-payment",
+              "buyers/tracking-orders"
+            ]
+          },
+          {
+            "group": "Vendedores",
+            "pages": [
+              "sellers/publishing-a-product",
+              "sellers/managing-listings",
+              "sellers/managing-sales",
+              "sellers/payment-methods"
+            ]
+          },
+          {
+            "group": "Entregas en Campus",
+            "pages": [
+              "delivery/delivery-spots",
+              "delivery/coordinating-delivery"
+            ]
+          },
+          {
+            "group": "Cuenta y Perfil",
+            "pages": [
+              "account/profile",
+              "account/favorites",
+              "account/faq"
+            ]
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/Henyer23xdmax/marketplace_ucss"
     }
   }
 }

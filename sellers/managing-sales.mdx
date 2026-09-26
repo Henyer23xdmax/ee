@@ -1,0 +1,105 @@
+---
+title: "Gestionar tus Ventas y Confirmar Pagos"
+sidebarTitle: "Mis Ventas"
+description: "Revisa tus pedidos entrantes, aprueba o rechaza comprobantes de Yape y Plin, y marca tus órdenes como entregadas en el campus UCSS."
+---
+
+La pestaña **Mis Ventas** dentro de la pantalla de Pedidos es tu centro de operaciones como vendedor. Desde ahí puedes ver cada orden que recibes, revisar los comprobantes de pago que envían los compradores, aprobar o rechazar esos comprobantes y registrar la entrega una vez que el artículo haya cambiado de manos en el campus.
+
+## Flujo completo de una venta
+
+<Steps>
+  <Step title="El comprador realiza un pedido">
+    Cuando un estudiante compra uno de tus artículos, la orden aparece de inmediato en tu pestaña **Mis Ventas** con el estado:
+
+    **`Pendiente de Pago`**
+
+    En este momento el comprador aún no ha enviado el pago. La tarjeta del pedido muestra el número de orden, el producto, la cantidad, el total y el punto de entrega acordado en el campus.
+  </Step>
+
+  <Step title="El comprador adjunta el comprobante (Yape / Plin)">
+    Si el comprador pagó por **Yape** o **Plin**, subirá una captura de pantalla del pago como comprobante. Al hacerlo, el estado de la orden cambia automáticamente a:
+
+    **`Pago en Revisión`**
+
+    En la tarjeta del pedido aparecerá una miniatura del comprobante adjunto.
+  </Step>
+
+  <Step title="Verifica el comprobante">
+    Toca la **miniatura del comprobante** para abrirla en pantalla completa y revisar los detalles del pago:
+
+    - Confirma que el monto coincide exactamente con el total de la orden.
+    - Verifica que el número de Yape o Plin que aparece en el comprobante es el tuyo.
+    - Revisa la fecha y hora de la transacción.
+
+    <Warning>
+      Aprueba únicamente los comprobantes que muestren con claridad el **monto correcto** y **tu número de Yape o Plin**. No apruebes pagos en los que el monto no coincida, la imagen esté borrosa o los datos sean inconsistentes. Aprobar un pago erróneo te perjudica directamente a ti como vendedor.
+    </Warning>
+  </Step>
+
+  <Step title="Aprueba o rechaza el comprobante">
+    Debajo del comprobante aparecen dos acciones:
+
+    - **Rechazar** — el comprobante tiene algún problema. Al tocar esta opción aparece un diálogo de confirmación. Si confirmas, el comprador recibe una notificación para que envíe un nuevo comprobante válido.
+    - **Confirmar pago** — el comprobante es correcto. La orden pasa al estado **`Pagado`**.
+
+    Una vez aprobado, coordina con el comprador el lugar y la hora exacta de entrega en el campus.
+  </Step>
+
+  <Step title="Entrega el artículo en el campus">
+    Reúnete con el comprador en el punto de entrega acordado dentro de la UCSS (Los Olivos, Lima). Entrega el artículo y asegúrate de que el comprador lo reciba conforme.
+  </Step>
+
+  <Step title="Marca el pedido como entregado">
+    Una vez hecha la entrega, regresa a la tarjeta del pedido en **Mis Ventas** y toca el botón:
+
+    **Marcar como entregado**
+
+    El estado de la orden cambiará a:
+
+    **`Entregado en Campus`**
+
+    Con esto el ciclo de venta queda cerrado.
+
+    <Note>
+      Cada orden incluye un botón **Ver constancia de pedido (PDF)** que genera un comprobante descargable con el resumen completo de la transacción. Guárdalo para tus registros personales o en caso de cualquier consulta posterior.
+    </Note>
+  </Step>
+</Steps>
+
+## Rechazar un comprobante de pago
+
+Si el comprobante que envió el comprador tiene algún problema (monto incorrecto, imagen ilegible, número de destinatario equivocado), sigue estos pasos:
+
+1. Toca la miniatura del comprobante para verlo en detalle.
+2. Toca **Rechazar**.
+3. Confirma la acción en el diálogo que aparece.
+4. El comprador recibe una notificación indicando que su comprobante fue rechazado y que debe enviar uno nuevo.
+
+El pedido vuelve a un estado de espera para que el comprador adjunte un comprobante correcto.
+
+## Información que muestra cada tarjeta de pedido
+
+Cada orden en tu lista de **Mis Ventas** incluye la siguiente información:
+
+| Dato | Descripción |
+|---|---|
+| **Número de orden** | Identificador único del pedido. Tócalo para copiarlo al portapapeles. |
+| **Producto** | Nombre del artículo vendido. |
+| **Cantidad** | Unidades incluidas en la orden. |
+| **Total** | Monto total a cobrar en soles (S/.). |
+| **Punto de entrega** | Lugar en el campus acordado para la entrega. |
+| **Datos del comprador** | Nombre e información de contacto del estudiante. |
+
+## Flujo de estados del pedido (vista del vendedor)
+
+```
+pendiente_pago → pago_en_revision → pagado → entregado
+```
+
+| Estado | Significado |
+|---|---|
+| `pendiente_pago` | El comprador realizó la orden pero aún no envió el pago. |
+| `pago_en_revision` | El comprador adjuntó un comprobante Yape / Plin. Pendiente de tu revisión. |
+| `pagado` | Aprobaste el comprobante. Coordina la entrega. |
+| `entregado` | Marcaste el pedido como entregado. Venta finalizada. |

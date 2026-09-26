@@ -1,0 +1,93 @@
+---
+title: "Seguimiento de Pedidos y Comprobantes PDF"
+sidebarTitle: "Mis Pedidos"
+description: "Consulta el estado de tus compras, entiende cada etapa del flujo de pedido y descarga el comprobante PDF oficial desde la sección Mis Compras."
+---
+
+La pantalla de **Pedidos** centraliza toda tu actividad de compraventa en UCSS Market. En la parte superior encontrarás un control segmentado con dos vistas:
+
+- **Mis Compras** — pedidos que tú has realizado como comprador
+- **Mis Ventas** — pedidos que has recibido como vendedor
+
+Esta guía cubre la vista **Mis Compras**. Aquí puedes consultar el estado de cada pedido, revisar el comprobante de pago adjunto y descargar la constancia oficial en PDF.
+
+---
+
+## Información de cada tarjeta de pedido
+
+Cada pedido se muestra como una tarjeta con los siguientes datos:
+
+| Campo | Descripción |
+|-------|-------------|
+| **Número de pedido** | Primeros 8 caracteres del UUID del pedido. Tócalo para copiar el ID completo al portapapeles. |
+| **Nombre del producto** | Título del artículo comprado |
+| **Cantidad** | Unidades adquiridas |
+| **Total** | Monto total del pedido en S/. |
+| **Punto de entrega** | Ubicación en campus donde se realizará la entrega |
+| **Método de pago** | Yape, Plin o Efectivo contra entrega |
+| **Miniatura del voucher** | Vista previa de la captura de pantalla adjuntada (solo para Yape/Plin) |
+
+---
+
+## Estados del pedido
+
+<AccordionGroup>
+  <Accordion title="🕐 Pendiente de Pago — pendiente_pago">
+    Tu pedido fue registrado correctamente en el sistema. Si pagaste con **Yape o Plin**, el vendedor aún no ha revisado tu comprobante. Si elegiste **Efectivo contra entrega**, deberás coordinar el punto de encuentro.
+
+    **Qué hacer:** espera a que el vendedor revise tu voucher. Asegúrate de haber adjuntado una captura de pantalla clara y legible.
+  </Accordion>
+  <Accordion title="🔍 Pago en Revisión — pago_en_revision">
+    El vendedor está revisando el comprobante de pago que adjuntaste. Este estado suele durar poco tiempo mientras el vendedor confirma que el monto y los datos sean correctos.
+
+    **Qué hacer:** no es necesario tomar ninguna acción. Recibirás una actualización en cuanto el vendedor confirme o rechace el voucher.
+  </Accordion>
+  <Accordion title="✅ Pagado — pagado">
+    El vendedor confirmó que recibió tu pago. El pedido está listo para ser entregado. Coordina el horario y el punto de encuentro con el vendedor a través de su información de contacto.
+
+    **Qué hacer:** dirígete al punto de entrega acordado (Cafetería, Biblioteca o Pabellón B) en el horario convenido.
+  </Accordion>
+  <Accordion title="📦 Entregado en Campus — entregado">
+    El artículo fue entregado físicamente y la transacción está completa. Este estado es definitivo y el pedido queda archivado en tu historial de compras.
+
+    **Qué hacer:** puedes descargar la constancia PDF del pedido como comprobante oficial de la transacción.
+  </Accordion>
+  <Accordion title="❌ Cancelado — cancelado">
+    El pedido fue cancelado, ya sea por el vendedor, por el sistema (por ejemplo, si el stock fue ajustado manualmente) o por una situación excepcional. El stock reservado se libera automáticamente.
+
+    **Qué hacer:** si consideras que la cancelación fue un error, contacta al vendedor directamente. Puedes realizar un nuevo pedido si el producto sigue disponible.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Comprobante oficial en PDF
+
+Una vez que tu pedido alcanza el estado **Pagado** o **Entregado**, aparece el botón:
+
+> **Ver constancia de pedido (PDF)**
+
+Tócalo para abrir el visor de PDF integrado. Desde ahí puedes:
+
+- **Ver** el documento con todos los detalles del pedido: número, fecha, artículo, vendedor, comprador, método de pago y punto de entrega.
+- **Descargar** la constancia a tu galería o almacenamiento del dispositivo.
+- **Compartir** el archivo por WhatsApp, correo u otras apps instaladas.
+
+Guarda este PDF como respaldo oficial de tu compra dentro de la plataforma UCSS Market.
+
+---
+
+## ¿Qué hacer si tu comprobante es rechazado?
+
+<Note>
+  Si el vendedor rechaza tu voucher de Yape o Plin, el pedido regresa automáticamente al estado **Pendiente de Pago**. Recibirás una notificación en la app. Ingresa al pedido, elimina el comprobante anterior y adjunta una nueva captura de pantalla que muestre claramente el monto, el número de destino y la fecha de la transacción. El vendedor volverá a revisarla una vez que la hayas subido.
+</Note>
+
+Las razones más comunes de rechazo son:
+
+- La captura está recortada y no muestra el monto completo
+- El monto transferido no coincide con el total del pedido
+- El número de destino pertenece a una persona diferente al vendedor
+- La operación fue revertida o cancelada en la app de pagos
+
+Asegúrate de adjuntar siempre la **pantalla de confirmación exitosa** de Yape o Plin, no la pantalla de inicio de la transferencia.

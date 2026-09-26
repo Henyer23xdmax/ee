@@ -1,0 +1,80 @@
+{
+  "projectType": "saas",
+  "projectName": "UCSS Market",
+  "projectDescription": "A mobile marketplace app for students at Universidad Católica Sedes Sapientiae (UCSS) to buy and sell textbooks, supplies, clothing, technology, and services with secure on-campus delivery.",
+  "theme": "almond",
+  "primaryColor": "#1E3A5F",
+  "lightColor": "#9CC0E7",
+  "darkColor": "#16293F",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guía de Usuario",
+        "groups": [
+          {
+            "group": "Primeros Pasos",
+            "pages": [
+              "introduction",
+              "getting-started/account-setup",
+              "getting-started/navigating-the-app"
+            ]
+          },
+          {
+            "group": "Compradores",
+            "pages": [
+              "buyers/browsing-catalog",
+              "buyers/product-details",
+              "buyers/checkout-and-payment",
+              "buyers/tracking-orders"
+            ]
+          },
+          {
+            "group": "Vendedores",
+            "pages": [
+              "sellers/publishing-a-product",
+              "sellers/managing-listings",
+              "sellers/managing-sales",
+              "sellers/payment-methods"
+            ]
+          },
+          {
+            "group": "Entregas en Campus",
+            "pages": [
+              "delivery/delivery-spots",
+              "delivery/coordinating-delivery"
+            ]
+          },
+          {
+            "group": "Cuenta y Perfil",
+            "pages": [
+              "account/profile",
+              "account/favorites",
+              "account/faq"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Product catalog with category filtering and search for textbooks, supplies, technology, uniforms, food, and tutoring services",
+    "In-app checkout with quantity selection and campus delivery point selection",
+    "Payment via Yape, Plin, and cash on delivery with voucher upload",
+    "Order management dashboard with separate buyer (Mis Compras) and seller (Mis Ventas) views",
+    "Seller tools: create listings with photos (camera or gallery), title, description, price, stock, and academic category",
+    "Payment review workflow: sellers can approve or reject payment vouchers submitted by buyers",
+    "On-campus secure delivery spots (cafetería, biblioteca, pabellón B)",
+    "PDF order receipt generation and download",
+    "Favorites list for saving products of interest",
+    "Dark and light mode support with UCSS institutional navy and gold branding"
+  ],
+  "publicApiSurface": [
+    "create_market_order (Supabase RPC) — creates an order with pessimistic stock lock",
+    "process_order_payment (Supabase RPC) — registers a payment with voucher URL",
+    "StorageService.uploadVoucherImage — uploads payment voucher to Supabase Storage",
+    "StorageService (product images) — uploads product photos to Supabase Storage",
+    "Order statuses: pendiente_pago, pago_en_revision, pagado, entregado, cancelado",
+    "Payment methods: yape, plin, efectivo, transferencia",
+    "Product statuses: disponible, agotado, pausado, eliminado"
+  ]
+}
