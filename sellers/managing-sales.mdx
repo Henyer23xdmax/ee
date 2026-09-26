@@ -1,5 +1,5 @@
 ---
-title: "Gestionar tus Ventas y Confirmar Pagos"
+title: "Cómo Gestionar tus Ventas y Confirmar Pagos en UCSS"
 sidebarTitle: "Mis Ventas"
 description: "Revisa tus pedidos entrantes, aprueba o rechaza comprobantes de Yape y Plin, y marca tus órdenes como entregadas en el campus UCSS."
 ---
@@ -12,7 +12,7 @@ La pestaña **Mis Ventas** dentro de la pantalla de Pedidos es tu centro de oper
   <Step title="El comprador realiza un pedido">
     Cuando un estudiante compra uno de tus artículos, la orden aparece de inmediato en tu pestaña **Mis Ventas** con el estado:
 
-    **`Pendiente de Pago`**
+    **Pendiente de Pago**
 
     En este momento el comprador aún no ha enviado el pago. La tarjeta del pedido muestra el número de orden, el producto, la cantidad, el total y el punto de entrega acordado en el campus.
   </Step>
@@ -20,7 +20,7 @@ La pestaña **Mis Ventas** dentro de la pantalla de Pedidos es tu centro de oper
   <Step title="El comprador adjunta el comprobante (Yape / Plin)">
     Si el comprador pagó por **Yape** o **Plin**, subirá una captura de pantalla del pago como comprobante. Al hacerlo, el estado de la orden cambia automáticamente a:
 
-    **`Pago en Revisión`**
+    **Pago en Revisión**
 
     En la tarjeta del pedido aparecerá una miniatura del comprobante adjunto.
   </Step>
@@ -41,7 +41,7 @@ La pestaña **Mis Ventas** dentro de la pantalla de Pedidos es tu centro de oper
     Debajo del comprobante aparecen dos acciones:
 
     - **Rechazar** — el comprobante tiene algún problema. Al tocar esta opción aparece un diálogo de confirmación. Si confirmas, el comprador recibe una notificación para que envíe un nuevo comprobante válido.
-    - **Confirmar pago** — el comprobante es correcto. La orden pasa al estado **`Pagado`**.
+    - **Confirmar pago** — el comprobante es correcto. La orden pasa al estado **Pagado**.
 
     Una vez aprobado, coordina con el comprador el lugar y la hora exacta de entrega en el campus.
   </Step>
@@ -57,7 +57,7 @@ La pestaña **Mis Ventas** dentro de la pantalla de Pedidos es tu centro de oper
 
     El estado de la orden cambiará a:
 
-    **`Entregado en Campus`**
+    **Entregado**
 
     Con esto el ciclo de venta queda cerrado.
 
@@ -91,15 +91,22 @@ Cada orden en tu lista de **Mis Ventas** incluye la siguiente información:
 | **Punto de entrega** | Lugar en el campus acordado para la entrega. |
 | **Datos del comprador** | Nombre e información de contacto del estudiante. |
 
-## Flujo de estados del pedido (vista del vendedor)
+## Estados del pedido (vista del vendedor)
 
-```
-pendiente_pago → pago_en_revision → pagado → entregado
-```
+<AccordionGroup>
+  <Accordion title="⏳ Pendiente de Pago">
+    El comprador realizó la orden pero aún no ha enviado el comprobante de pago. Espera a que adjunte su voucher de Yape o Plin, o a que se concrete la entrega si eligió efectivo.
+  </Accordion>
 
-| Estado | Significado |
-|---|---|
-| `pendiente_pago` | El comprador realizó la orden pero aún no envió el pago. |
-| `pago_en_revision` | El comprador adjuntó un comprobante Yape / Plin. Pendiente de tu revisión. |
-| `pagado` | Aprobaste el comprobante. Coordina la entrega. |
-| `entregado` | Marcaste el pedido como entregado. Venta finalizada. |
+  <Accordion title="🔍 Pago en Revisión">
+    El comprador adjuntó un comprobante de Yape o Plin. La orden está esperando tu aprobación. Toca la miniatura para revisar el comprobante y luego confirma o rechaza el pago.
+  </Accordion>
+
+  <Accordion title="✅ Pagado">
+    Aprobaste el comprobante. El pago está confirmado. Coordina con el comprador la hora y el punto de entrega en el campus para completar la transacción.
+  </Accordion>
+
+  <Accordion title="📦 Entregado">
+    Marcaste el pedido como entregado. La venta está finalizada y queda registrada en tu historial.
+  </Accordion>
+</AccordionGroup>

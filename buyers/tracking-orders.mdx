@@ -1,5 +1,5 @@
 ---
-title: "Seguimiento de Pedidos y Comprobantes PDF"
+title: "Seguimiento de Pedidos y Comprobantes PDF en UCSS Market"
 sidebarTitle: "Mis Pedidos"
 description: "Consulta el estado de tus compras, entiende cada etapa del flujo de pedido y descarga el comprobante PDF oficial desde la sección Mis Compras."
 ---
@@ -19,7 +19,7 @@ Cada pedido se muestra como una tarjeta con los siguientes datos:
 
 | Campo | Descripción |
 |-------|-------------|
-| **Número de pedido** | Primeros 8 caracteres del UUID del pedido. Tócalo para copiar el ID completo al portapapeles. |
+| **Número de pedido** | Código único de referencia del pedido. Tócalo para copiar el número completo al portapapeles. |
 | **Nombre del producto** | Título del artículo comprado |
 | **Cantidad** | Unidades adquiridas |
 | **Total** | Monto total del pedido en S/. |
@@ -32,28 +32,28 @@ Cada pedido se muestra como una tarjeta con los siguientes datos:
 ## Estados del pedido
 
 <AccordionGroup>
-  <Accordion title="🕐 Pendiente de Pago — pendiente_pago">
+  <Accordion title="🕐 Pendiente de Pago">
     Tu pedido fue registrado correctamente en el sistema. Si pagaste con **Yape o Plin**, el vendedor aún no ha revisado tu comprobante. Si elegiste **Efectivo contra entrega**, deberás coordinar el punto de encuentro.
 
     **Qué hacer:** espera a que el vendedor revise tu voucher. Asegúrate de haber adjuntado una captura de pantalla clara y legible.
   </Accordion>
-  <Accordion title="🔍 Pago en Revisión — pago_en_revision">
+  <Accordion title="🔍 Pago en Revisión">
     El vendedor está revisando el comprobante de pago que adjuntaste. Este estado suele durar poco tiempo mientras el vendedor confirma que el monto y los datos sean correctos.
 
     **Qué hacer:** no es necesario tomar ninguna acción. Recibirás una actualización en cuanto el vendedor confirme o rechace el voucher.
   </Accordion>
-  <Accordion title="✅ Pagado — pagado">
+  <Accordion title="✅ Pagado">
     El vendedor confirmó que recibió tu pago. El pedido está listo para ser entregado. Coordina el horario y el punto de encuentro con el vendedor a través de su información de contacto.
 
     **Qué hacer:** dirígete al punto de entrega acordado (Cafetería, Biblioteca o Pabellón B) en el horario convenido.
   </Accordion>
-  <Accordion title="📦 Entregado en Campus — entregado">
+  <Accordion title="📦 Entregado en Campus">
     El artículo fue entregado físicamente y la transacción está completa. Este estado es definitivo y el pedido queda archivado en tu historial de compras.
 
     **Qué hacer:** puedes descargar la constancia PDF del pedido como comprobante oficial de la transacción.
   </Accordion>
-  <Accordion title="❌ Cancelado — cancelado">
-    El pedido fue cancelado, ya sea por el vendedor, por el sistema (por ejemplo, si el stock fue ajustado manualmente) o por una situación excepcional. El stock reservado se libera automáticamente.
+  <Accordion title="❌ Cancelado">
+    El pedido fue cancelado, ya sea por el vendedor o por una situación excepcional en la plataforma. Las unidades reservadas se liberan automáticamente y vuelven a estar disponibles en el catálogo.
 
     **Qué hacer:** si consideras que la cancelación fue un error, contacta al vendedor directamente. Puedes realizar un nuevo pedido si el producto sigue disponible.
   </Accordion>
